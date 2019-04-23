@@ -1,0 +1,356 @@
+/* header css*/
+header {
+    position: relative;
+    height: 100%;
+    background:#1E79BF url("../image/bgc1.jpg") center center no-repeat;
+    background-size: cover;
+
+}
+nav {
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    padding: 0 5%;
+    z-index: 1;
+}
+.logo {
+    float: left;
+    font: 28px/2 "Adobe 黑体 Std R";
+}
+.nav-item {
+    float: right;
+}
+.nav-item > li {
+    float: left;
+    text-align: center;
+}
+.nav-item > li > a {
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 20px;
+}
+.nav-item > li > a:hover {
+    background-color: #1E79BF;
+
+}
+.header-ct {
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+.header-ct h1 {
+    padding-top: 10px;
+    font-size: 40px;
+}
+.header-ct p {
+    font-size: 18px;
+    margin: 30px 0 60px 0;
+}
+.header-ct .button {
+    padding: 10px 25px;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.header-ct .button:hover {
+    background-color: white;
+    color: #1E79BF;
+}
+
+/*main css*/
+/*****************************************************************************
+=====================================服务=====================================
+******************************************************************************/
+.main-ct-services,
+.main-ct-product,
+.main-ct-timeline,
+.main-ct-team,
+.main-ct-contact {
+    margin: 100px auto;
+    text-align: center;
+}
+.main-ct-services > h1,
+.main-ct-product > h1,
+.main-ct-timeline > h1,
+.main-ct-team > h1,
+.main-ct-contact > h1 {
+    font-size: 36px;
+}
+.main-ct-services > p,
+.main-ct-product > p,
+.main-ct-timeline > p,
+.main-ct-team > p,
+.main-ct-contact > p {
+    font-size: 18px;
+    color: #777;
+    margin: 10px 0 40px 0;
+}
+.main-ct-services section{
+    display: inline-block;
+    width: calc(33.3% - 35px);
+    height: 350px;
+    padding: 30px 20px 20px;
+    box-shadow: 3px 3px 7px rgba(0,0,0,.2),-3px -3px 7px rgba(0,0,0,.2);
+}
+.main-ct-services section:nth-of-type(3n-1){
+    margin: 0 25px;
+}
+.main-ct-services .iconfont {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #1E79BF;
+    font-size: 68px;
+    text-align: center;
+    color: white;
+}
+.main-ct-services section > h3 {
+    color: #777;
+}
+.main-ct-services section > p {
+    margin: 20px 0;
+    line-height: 1.5;
+    color: #777;
+}
+/*****************************************************************************
+=====================================产品=====================================
+******************************************************************************/
+.product {
+    background: #fff url("../image/bgc2.jpg") center center no-repeat;
+}
+.main-ct-product {
+    padding: 50px 150px;
+}
+.main-ct-product section {
+    float: left;
+    width: calc(24% - 15px);
+    margin: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 7px rgba(0,0,0,.2),-3px -3px 7px rgba(0,0,0,.2);
+}
+.main-ct-product section > a {
+    display: block;
+    position: relative;
+}
+.main-ct-product section > a:hover::before {
+    content: "\e600";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(30,121,191,0.6);
+    font-size: 62px;
+    line-height: 2.5;
+    color: white;
+}
+.main-ct-product section img {
+    width: 100%;
+}
+.main-ct-product section > p {
+    padding: 15px 0;
+    color: #777;
+}
+
+/**********************************************************************
+=========================================历史线=========================
+************************************************************************/
+
+.history {
+    position: relative;
+}
+.history::before {
+    content: '';
+    position: absolute;
+    height: calc(100% - 2px);
+    border: 1px solid #aaa;
+    z-index: -1;
+}
+.history > h3 {
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #1E79BF;
+    background-color: white;
+    text-align: center;
+    font-size: 28px;
+    color: #1E79BF;
+    line-height: 100px;
+}
+
+.history-fl-item {
+    transform: translateX(-90%);
+    margin: 70px auto;
+    width: 200px;
+    text-align: right;
+}
+.history-fr-item {
+    transform: translateX(90%);
+    width: 200px;
+    margin: 70px auto;
+    text-align: left;
+}
+.history-fl-item img {
+    position: absolute;
+    top: 120%;
+    left: -10%;
+}
+.history-fr-item img {
+    position: absolute;
+    top: 120%;
+    left: 0;
+}
+.history-fl-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 135%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #1E79BF;
+}
+.history-fr-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -45%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #1E79BF;
+}
+
+/**********************************************************************
+=========================================团队信息=========================
+************************************************************************/
+.team {
+    background-color: #eee;
+    padding: 15px 0;
+}
+.main-ct-team img {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin: 20px auto;
+}
+.main-ct-team section{
+    display: inline-block;
+    width: calc(33.3% - 15px);
+    height: 350px;
+    padding: 0 20px;
+}
+.main-ct-team section > p {
+    color: #777;
+    padding: 5px 0;
+}
+.main-ct-team a,
+footer li:nth-child(2) > a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #1E79BF;
+    border: 1px solid #1E79BF;
+    border-radius: 50%;
+    color: white;
+    font-size: 28px;
+    line-height: 40px;
+}
+.main-ct-team a:hover,
+footer li:nth-child(2) > a:hover {
+    color: #1E79BF;
+    background-color: white;
+}
+.main-ct-team > p:nth-of-type(2) {
+    padding: 30px 200px;
+    font-size: 14px;
+    color: #777;
+}
+
+/**********************************************************************
+=========================================联系我们=========================
+************************************************************************/
+.main-ct-contact {
+    background: url("../image/bgc3.jpg") center center no-repeat;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+.information ul {
+    padding: 0 20%;
+}
+.information li {
+    display: inline-block;
+    width: 45%;
+
+}
+.information li:first-child {
+    float: left;
+}
+.information li:last-child {
+    float: right;
+}
+.information  li > input {
+    width: 100%;
+    display: block;
+    height: 50px;
+    font-size: 20px;
+    text-indent: 1em;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    border: none;
+    box-shadow: 3px 3px 7px rgba(0,0,0,.2),-3px -3px 7px rgba(0,0,0,.2);
+}
+.information textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+    text-indent: 1em;
+    padding: 15px 0;
+    border-radius: 3px;
+    resize: none;
+    border: none;
+    box-shadow: 3px 3px 7px rgba(0,0,0,.2),-3px -3px 7px rgba(0,0,0,.2);
+}
+.information .btn {
+    width: 350px;
+    margin: 40px auto;
+    font-size: 20px;
+    line-height: 2;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #1E79BF;
+}
+/**********************************************************************
+=========================================footer=========================
+************************************************************************/
+footer ul {
+
+}
+footer li {
+    width: calc(33.3% - 5px);
+    display: inline-block;
+    padding: 20px 40px;
+    color: #777;
+    font-size: 14px;
+    text-align: center;
+
+}
+footer li:last-child > a {
+    color: #777;
+    margin-right:10px ;
+}
+footer li:last-child > a:hover {
+    color: #1E79BF;
+    text-decoration: underline;
+}
